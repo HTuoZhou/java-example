@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * @author TuoZhou
  * @date 2022/4/18
- * 简单工厂模式
+ * 简单工厂模式(静态工厂模式)
  */
 public class PizzaStore {
 
@@ -79,7 +79,7 @@ class SimpleFactory {
     //     return pizza;
     // }
 
-    public static AbstractPizza pizza(String orderType) {
+    public static AbstractPizza createPizza(String orderType) {
         AbstractPizza pizza = null;
         if (Objects.equals(orderType, "cheese")) {
             pizza = new CheesePizza();
@@ -100,7 +100,7 @@ class OrderPizza {
         String orderType;
         do {
             orderType = getOrderType();
-            pizza = SimpleFactory.pizza(orderType);
+            pizza = SimpleFactory.createPizza(orderType);
             if (Objects.nonNull(pizza)) {
                 pizza.prepare();
                 pizza.bake();
