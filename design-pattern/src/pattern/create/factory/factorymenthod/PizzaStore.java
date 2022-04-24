@@ -6,7 +6,6 @@ import java.util.Objects;
 
 /**
  * @author TuoZhou
- * @date 2022/4/20
  * 工厂方法模式
  */
 public class PizzaStore {

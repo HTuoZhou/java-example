@@ -4,7 +4,6 @@ import java.util.*;
 
 /**
  * @author TuoZhou
- * @date 2022/3/2
  * 20-有效的括号
  */
 public class IsValid {

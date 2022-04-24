@@ -2,7 +2,6 @@ package simple;
 
 /**
  * @author TuoZhou
- * @date 2022/3/3
  * 21-合并两个有序列表
  */
 public class MergeTwoLists {

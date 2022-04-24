@@ -6,7 +6,6 @@ import java.util.Objects;
 
 /**
  * @author TuoZhou
- * @date 2022/4/18
  * 简单工厂模式(静态工厂模式)
  */
 public class PizzaStore {

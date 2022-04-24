@@ -2,7 +2,6 @@ package simple;
 
 /**
  * @author TuoZhou
- * @date 2022/3/3
  * 26-删除有序数组中的重复项
  */
 public class RemoveDuplicates {

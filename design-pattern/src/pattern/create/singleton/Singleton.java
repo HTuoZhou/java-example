@@ -2,7 +2,6 @@ package pattern.create.singleton;
 
 /**
  * @author TuoZhou
- * @date 2022/4/16
  * 单例模式
  * 饿汉式(静态常量)
  * 饿汉式(静态代码块)

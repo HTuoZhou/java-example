@@ -4,7 +4,6 @@ import java.util.Objects;
 
 /**
  * @author TuoZhou
- * @date 2022/3/1
  * 14-最长公共前缀
  */
 public class LongestCommonPrefix {

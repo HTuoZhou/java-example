@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @author TuoZhou
- * @date 2022/2/25
  * 9-回文数
  */
 public class Palindrome {
