@@ -75,8 +75,7 @@ class Sheep implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        Sheep sheep = (Sheep) super.clone();
-        return sheep;
+        return (Sheep) super.clone();
     }
 }
 
@@ -118,8 +117,7 @@ class SheepVariety implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        SheepVariety sheepVariety = (SheepVariety) super.clone();
-        return sheepVariety;
+        return (SheepVariety) super.clone();
     }
 }
 
