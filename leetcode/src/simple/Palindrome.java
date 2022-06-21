@@ -1,8 +1,5 @@
 package simple;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * @author TuoZhou
  * 9-回文数
@@ -41,16 +38,16 @@ public class Palindrome {
 
         // 3、
         if (x == 0) {
-            result =  true;
-        } else if (x < 0 || x % 10 == 0){
-            result =  false;
+            result = true;
+        } else if (x < 0 || x % 10 == 0) {
+            result = false;
         } else {
             int reversed = 0;
             while (x > reversed) {
                 reversed = reversed * 10 + x % 10;
                 x /= 10;
             }
-            result = (x == reversed || x == reversed /10);
+            result = (x == reversed || x == reversed / 10);
         }
         return result;
     }

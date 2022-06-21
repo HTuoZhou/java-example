@@ -12,14 +12,14 @@ public class RomanToInt {
     public static int romanToInt(String s) {
         int result = 0;
 
-        Map<Character,Integer> map = new HashMap<>();
-        map.put('I',1);
-        map.put('V',5);
-        map.put('X',10);
-        map.put('L',50);
-        map.put('C',100);
-        map.put('D',500);
-        map.put('M',1000);
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
 
         // 1、
         // char[] chars = s.toCharArray();
@@ -52,7 +52,7 @@ public class RomanToInt {
         char[] chars = s.toCharArray();
         for (int i = 0; i < chars.length; i++) {
             int value = map.get(chars[i]);
-            if (i < chars.length -1 && value < map.get(chars[i + 1])) {
+            if (i < chars.length - 1 && value < map.get(chars[i + 1])) {
                 result -= value;
             } else {
                 result += value;

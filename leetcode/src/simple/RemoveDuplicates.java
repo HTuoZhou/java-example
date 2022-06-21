@@ -15,16 +15,16 @@ public class RemoveDuplicates {
         int fast = 1;
         int slow = 1;
         while (fast < length) {
-           if (nums[fast] != nums[fast - 1]) {
-               nums[slow++] = nums[fast];
-           }
-            fast ++;
+            if (nums[fast] != nums[fast - 1]) {
+                nums[slow++] = nums[fast];
+            }
+            fast++;
         }
         return slow;
     }
 
     public static void main(String[] args) {
-        System.out.println(removeDuplicates(new int[]{1,1,2}));
+        System.out.println(removeDuplicates(new int[]{1, 1, 2}));
     }
 
 }

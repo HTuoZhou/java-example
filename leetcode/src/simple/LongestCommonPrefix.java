@@ -66,46 +66,46 @@ public class LongestCommonPrefix {
         } else {
             int length = Integer.MAX_VALUE;
             for (String str : strs) {
-                length = Math.min(length,str.length());
+                length = Math.min(length, str.length());
             }
 
             int low = 0;
             int high = length;
             while (low < high) {
                 int middle = (high - low + 1) / 2 + low;
-                if (isCommonPrefix(strs,middle)) {
+                if (isCommonPrefix(strs, middle)) {
                     low = middle;
                 } else {
                     high = middle - 1;
                 }
             }
 
-            return strs[0].substring(0,low);
+            return strs[0].substring(0, low);
         }
 
     }
 
-    public static String longestCommonPrefix(String[] strs,int start,int end) {
+    public static String longestCommonPrefix(String[] strs, int start, int end) {
         if (start == end) {
             return strs[start];
         } else {
             int middle = (end - start) / 2 + start;
-            String left = longestCommonPrefix(strs,start,middle);
-            String right = longestCommonPrefix(strs,middle + 1,end);
-            return longestCommonPrefix(left,right);
+            String left = longestCommonPrefix(strs, start, middle);
+            String right = longestCommonPrefix(strs, middle + 1, end);
+            return longestCommonPrefix(left, right);
         }
     }
 
-    public static String longestCommonPrefix(String str1,String str2) {
-        int length = Math.min(str1.length(),str2.length());
+    public static String longestCommonPrefix(String str1, String str2) {
+        int length = Math.min(str1.length(), str2.length());
         int index = 0;
         while (index < length && str1.charAt(index) == str2.charAt(index)) {
-            index ++;
+            index++;
         }
-        return str1.substring(0,index);
+        return str1.substring(0, index);
     }
 
-    public static boolean isCommonPrefix(String[] strs,int length) {
+    public static boolean isCommonPrefix(String[] strs, int length) {
         String s = strs[0].substring(0, length);
         for (int i = 1; i < strs.length; i++) {
             for (int j = 0; j < length; j++) {
@@ -118,7 +118,7 @@ public class LongestCommonPrefix {
     }
 
     public static void main(String[] args) {
-        String[] strs = new String[]{"ab","a"};
+        String[] strs = new String[]{"ab", "a"};
         System.out.println(longestCommonPrefix(strs));
     }
 

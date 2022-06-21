@@ -1,6 +1,6 @@
 package simple;
 
-import java.util.*;
+import java.util.Stack;
 
 /**
  * @author TuoZhou

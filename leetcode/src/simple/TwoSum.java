@@ -1,6 +1,5 @@
 package simple;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -27,20 +26,20 @@ class TwoSum {
         // return result;
 
         // 2、
-        Map<Integer,Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(nums[i])) {
-                result[0] =  map.get(nums[i]);
+                result[0] = map.get(nums[i]);
                 result[1] = i;
                 return result;
             }
-            map.put(target - nums[i],i);
+            map.put(target - nums[i], i);
         }
         return result;
     }
 
     public static void main(String[] args) {
-        int[] nums = {3,2,4};
+        int[] nums = {3, 2, 4};
         int target = 6;
 
         int[] result = twoNum(nums, target);
